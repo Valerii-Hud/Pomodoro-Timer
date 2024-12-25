@@ -1,0 +1,67 @@
+:root {
+  --light-red: rgb(111, 0, 0);
+  --dark-red: rgb(59, 9, 9);
+  --main-shadow: rgba(0, 0, 0, 0.9);
+}
+
+* {
+  background-image: url("/PomodoroTimer/assets/images/bg-image.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--dark-red);
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: var(--light-red);
+  padding: 0% 2% 2% 2%;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 50px 20px var(--main-shadow);
+}
+
+.title {
+  font-size: 5vh;
+  color: black;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.timer {
+  font-size: 5vh;
+  font-weight: 900;
+  color: black;
+  background: var(--light-red);
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 1px var(--main-shadow);
+  letter-spacing: 2vw;
+}
+
+button {
+  font-size: 3vh;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+  background: var(--light-red);
+  box-shadow: 1px 1px 1px 1px var(--main-shadow);
+  transition: 0.5s ease;
+  margin: 1vh;
+  cursor: pointer;
+  letter-spacing: 0.5vh;
+}
+
+button:hover {
+  filter: brightness(1.5);
+  font-size: 4vh;
+  opacity: 0.9;
+}
